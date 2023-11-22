@@ -1,0 +1,196 @@
+nav li:nth-child(3) {
+    border-bottom: 2px solid white;
+}
+
+header {
+    background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0)), url('https://visionone.com.my/wp-content/uploads/2016/02/oil-gas-banner.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body {
+    background-color: #000000;
+}
+
+#intro {
+    position: relative;
+    padding: 40px 120px;
+    color: #ffffff;
+}
+
+#intro h2 {
+    max-width: 500px;
+    font-size: 40px;
+}
+
+#intro p {
+    color: #919396;
+}
+
+#big-title,
+#greet {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#misi-visi {
+    margin-top: 150px;
+}
+
+#misi-visi .mission-content3  {
+    margin-bottom: 150px;
+}
+
+#big-title,
+#greet,
+#misi-visi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 300px 0 300px;
+}
+
+#big-title div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#big-title div p {
+    margin: 0;
+}
+
+#big-title .our-service,
+#big-title .adhere-to {
+    display: inline;
+    color: #919396;
+    margin-right: 10px;
+}
+
+#big-title .our-service,
+#big-title .status,
+#greet .greetText .status ,
+#misi-visi .mission,
+#misi-visi .vision {
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+}
+
+#big-title .IS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#big-title .IS p {
+    margin: 0;
+    font-size: 150px;
+    font-weight: 700;
+    line-height:normal;
+}
+
+#big-title .IS .international {
+    background: linear-gradient(to top, #3ABFBC, #f2f2f2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#big-title .IS .standards {
+    background: linear-gradient(to bottom, #3ABFBC, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#big-title .ps,
+#greet {
+    display: inline;
+    margin-right: 10px;
+}
+
+#big-title .provision,
+#greet {
+    color: #D9D9D9;
+    padding-bottom: 20px;
+}
+
+#big-title .state,
+#misi-visi .vision-content,
+#misi-visi .mission-content1,
+#misi-visi .mission-content2,
+#misi-visi .mission-content3 {
+    color: #919396;
+    padding-bottom: 10px;
+}
+
+#big-title .state,
+#misi-visi .vision-content {
+    padding-bottom: 90px;
+}
+
+#misi-visi .mission-content3 {
+    padding-bottom: 190px;
+}
+
+#credit {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#credit div {
+    flex: 1;
+    margin: 50px 30px;
+    padding: 50px;
+    border-radius: 14px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#credit .box1,
+#credit .box2,
+#credit .box3,
+#credit .box4 {
+    width: 50px;
+}
+
+#credit .box1 {
+    background: linear-gradient(to right, #8B5CE8, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-shadow: 10px 10px 40px rgba(139, 92, 232, 0.9);
+}
+
+#credit .box2 {
+    background: linear-gradient(to right, #69FBCF, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-shadow: 10px 10px 40px rgba(105, 251, 207, 0.9);
+}
+
+#credit .box3 {
+    background: linear-gradient(to right, #BF3A3A, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-shadow: 10px 10px 40px rgba(191, 58, 58, 0.9);
+}
+
+#credit .box4 {
+    background: linear-gradient(to right, #69FBCF, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-shadow: 10px 10px 40px rgba(58, 191, 188, 0.9);
+}
+
+footer {
+    background-color: #000000;
+    color: #919396;
+}

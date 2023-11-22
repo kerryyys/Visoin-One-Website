@@ -1,0 +1,70 @@
+nav li:nth-child(5) {
+    border-bottom: 2px solid white;
+}
+
+header {
+    background-color: #3ABFBC;
+    height: initial;
+    background-position: initial;
+    position: initial;
+}
+
+#intro {
+    position: relative;
+    padding: 40px 120px;
+    background-color: #3ABFBC;
+    color: #ffffff;
+}
+
+#intro h2 {
+    max-width: 500px;
+    font-size: 40px;
+}
+
+#intro span {
+    display: block;
+}
+
+#title {
+    color: #3ABFBC;
+    padding: 30px 250px;
+}
+
+#title p {
+    color: #919396;
+}
+
+#content {
+    padding: 30px 250px 200px;
+}
+
+#content div {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+#content .year {
+    display: block;
+    color: #3ABFBC;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#content h2 {
+    color: #3ABFBC;
+    width: 450px;
+    max-width: 450px;
+    margin-bottom: 10px;
+}
+
+#content p {
+    color: #919396;
+    max-width: 600px;
+}
+
+#content p span {
+    font-size: 18px;
+    display: block;
+    padding-left: 100px;
+}
