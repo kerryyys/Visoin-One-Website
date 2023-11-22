@@ -26,8 +26,13 @@ header {
 }
 
 #title {
+    margin-top: 25px;
     color: #3ABFBC;
-    padding: 30px 250px;
+    padding: 30px 120px;
+}
+
+#title h2 {
+    font-size: 40px;
 }
 
 #title p{
@@ -35,7 +40,7 @@ header {
 }
 
 #content {
-    padding: 30px 250px 200px;
+    padding: 30px 160px 200px;
 }
 
 #content div {
