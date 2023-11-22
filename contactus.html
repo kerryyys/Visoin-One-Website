@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="https://visionone.com.my/wp-content/uploads/2015/07/logo-300x67.png"
+                        alt="Vision One Logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <p class="vision-one">Vision One</p>
+        <h2>Contact Us</h2>
+        <p>Connect with Vision One Sdn. Bhd. - your go-to for innovative solutions and top-notch services. We're here to
+            address your inquiries and collaboration interests.</p>
+    </section>
+
+    <section id="inquiries">
+        <div class="mainbox">
+            <h2>Any Inquiries?</h2>
+            <form id="inquiryForm">
+                <p>Name</p>
+                <input type="text" name="name">
+                <p>Email Address</p>
+                <input type="text" name="email">
+                <p>Message</p>
+                <textarea name="message"></textarea>
+            </form>
+            <div class="submit">Submit</div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="alert" id="alert">
+                Form submitted successfully! Thank you!
+            </div>
+        </div>
+
+    </section>
+
+    <section id="location">
+        <div class="office"
+            data-content="
+Headquartered in Mutiara Damansara, Petaling Jaya, our office is strategically situated on the first floor of a well-developed commercial area. Surrounded by banks, convenience stores, and with easy access to highways, we are in close proximity to hotels, shopping malls, and supermarkets. Kuala Lumpur International Airport is approximately 40 kilometers away, and Malaysia's seaport is just 25 kilometers away.">
+            <h2>Head Office Mutiara Damansara, Petaling Jaya</h2>
+        </div>
+        <div class="branch"
+            data-content="
+Discover our Kuantan Branch Office and Yard Facility in the industrial heart of Gebeng, Kuantan, spanning a 2-acre yard, where Vision One Sdn. Bhd. is strategically positioned to serve your needs.">
+            <h2>Kuantan Branch and Yard Facility</h2>
+        </div>
+    </section>
+
+    <section id="info">
+        <div data-content="Find Us Here!">
+            <h2>Find Us Here!</h2>
+            <p class="subtitle">Address</p>
+            <p class="content">8-1, JLn PJU 7/16 Mutiara Damansara 47800 Petaling Jaya Selangor</p>
+
+            <p class="subtitle">Contact</p>
+            <p class="content">Tel: +603 7733 2858</p>
+            <p class="content">Fax: +603 7722 3858</p>
+
+            <p class="subtitle">Email</p>
+            <p class="subemail">Sales</p>
+            <p class="content">faiz@visionone.com.my</p>
+            <p class="content">sales@visionone.com.my</p>
+
+            <p class="subemail">Enquiry</p>
+            <p class="content">faiz@visionone.com.my</p>
+            <p class="content">sales@visionone.com.my</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <p class="tc"><a href="termCondition.html">T&C</a> | <a href="privacystatement.html">Privacy Statement</a>
+            </p>
+            <p>Contact Us - Tel: +603 7733 2858</p>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2023 Vision One Sdn. Bhd.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const submitButton = document.querySelector('.submit');
+            const form = document.getElementById('inquiryForm');
+            const overlay = document.getElementById('overlay');
+            const alertBox = document.getElementById('alert');
+
+            submitButton.addEventListener('click', function (e) {
+                // Prevent the default form submission
+                e.preventDefault();
+
+                // Get input values
+                const nameInput = form.querySelector('input[name="name"]');
+                const emailInput = form.querySelector('input[name="email"]');
+                const messageInput = form.querySelector('textarea[name="message"]');
+
+                // Validate input
+                if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+                    alert('Please fill in all fields (Name, Email, Message) before submitting.');
+                    return;
+                }
+
+                // Clear form fields
+                form.reset();
+                // Show overlay and alert
+                overlay.style.display = 'flex';
+                alertBox.style.display = 'block';
+
+                // Hide overlay and alert after some time (e.g., 3 seconds)
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                    alertBox.style.display = 'none';
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+
+</html>
