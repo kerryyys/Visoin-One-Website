@@ -33,32 +33,43 @@ header::after {
     display: block;
 }
 
-#content{
+#content {
     color: #3ABFBC;
     padding-bottom: 200px;
 }
-#content a{
+
+#content a {
     text-decoration: none;
     color: #3ABFBC;
 }
-#content h2{
+
+#content h2 {
     padding: 50px 250px 20px;
 }
 
-#content div{
+#content div {
     margin-left: 250px;
     margin-bottom: 50px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 1000px;
 }
 
-#content span{
+#content div:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#content span {
     display: block;
 }
-#content div p{
+
+#content div p {
     padding: 20px 0 0 40px;
 }
-#content div h3{
+
+#content div h3 {
     padding: 0 0 20px 40px;
     text-decoration: underline;
 }
