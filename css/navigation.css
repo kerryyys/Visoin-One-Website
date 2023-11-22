@@ -1,0 +1,100 @@
+.menu-container {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav li:first-child img {
+    width: 150px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    display: block;
+    transition: color 0.1s;
+}
+
+.menu-container:hover,
+.menu-container:hover nav {
+    background-color: #fff;
+}
+
+nav ul:hover a {
+    color: #000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    max-height: none;
+    /* Remove the max-height property */
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    /* Hide any overflowing content */
+}
+nav ul:hover {
+    padding-bottom: 35px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #000;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 100%;
+    display: block;
+}
+
+nav ul li:hover a {
+    color: #3abfbc;
+    text-decoration: underline;
+}
+
+nav ul ul li a {
+    color: #000;
+    padding: 10px 0;
+}
+
+/* Remove box shadow for submenu */
+nav ul ul li {
+    box-shadow: none;
+}
+
+/* Adjust z-index to keep submenu above main menu */
+nav ul ul {
+    z-index: 1;
+}
+
+/* Remove underline from submenu items on hover */
+nav ul ul li a:hover {
+    text-decoration: none;
+}

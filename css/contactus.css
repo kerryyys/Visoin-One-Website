@@ -1,0 +1,218 @@
+nav li:nth-child(6) {
+    border-bottom: 2px solid white;
+}
+
+header {
+    background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2016/02/ANAMO-.4.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#intro {
+    position: relative;
+    padding: 40px 120px;
+    font-size: 16px;
+}
+
+#intro p {
+    color: #919396;
+}
+
+#inquiries p {
+    padding-left: 35px;
+}
+
+#inquiries form input,
+#inquiries form textarea {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+#inquiries form textarea {
+    height: 300px;
+}
+
+#inquiries .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    width: 120px;
+    height: 50px;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#inquiries .mainbox {
+    width: 700px;
+    height: 680px;
+    color: #ffffff;
+    background: rgba(58, 191, 188, 0.7);
+    box-shadow: 0 4px 8px rgba(131, 211, 228, 0.5);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#inquiries h2 {
+    padding: 20px 40px;
+}
+
+#location {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#location div {
+    width: 450px;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    position: relative;
+    background: url("https://visionone.com.my/wp-content/uploads/2016/02/v1off.jpg") no-repeat;
+}
+
+#location .office {
+    background: url("https://visionone.com.my/wp-content/uploads/2016/02/v1off.jpg") no-repeat;
+    background-size: cover;
+}
+
+#location .branch {
+    background: url("https://visionone.com.my/wp-content/uploads/2016/02/kuantan_branch.jpg") no-repeat;
+    background-size: cover;
+}
+
+#location .office h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#location .branch h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#location .office::before,
+#location .branch::before {
+    max-width: 420px;
+    content: attr(data-content);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+#location .office:hover::before,
+#location .branch:hover::before {
+    opacity: 1;
+}
+
+#info {
+    padding-bottom: 200px;
+}
+
+#info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    width: 1000px;
+    height: 420px;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#info div h2 {
+    text-align: center;
+}
+
+#info div .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+#info div .subemail {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+#info div .content {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #000000;
+    color: #919396;
+}
