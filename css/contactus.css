@@ -27,7 +27,7 @@ header::after {
 #intro {
     position: relative;
     padding: 40px 120px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 #intro h2 {
@@ -40,7 +40,6 @@ header::after {
 
 #intro p {
     color: #919396;
-    padding-bottom: 35px;
 }
 
 #inquiries p {
@@ -55,8 +54,12 @@ header::after {
     margin-bottom: 40px;
     margin-left: 35px;
     border-radius: 5px;
-    color: rgb(92, 92, 92);
+    color: #ffffff;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    /* Set background to transparent and add border */
+    background: transparent;
+    border: 1px solid #ffffff;
+    /* Add a white border */
 }
 
 #inquiries form textarea {
@@ -109,7 +112,7 @@ header::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.678);
+    background: rgba(255, 255, 255, 0.896);
     color: #000000;
     padding: 30px;
     border-radius: 10px;
@@ -134,11 +137,10 @@ header::after {
 
 #location {
     display: flex;
-    justify-content: left;
-    margin: 0 auto;
+    justify-content: center;
+    /* Center the content horizontally */
     text-align: center;
     height: 80vh;
-    margin-left: 120px;
 }
 
 #location div {
@@ -184,11 +186,8 @@ header::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Centering trick */
     width: 100%;
-    /* Adjusted to have space between div border */
     height: 100%;
-    /* Adjusted to have space between div border */
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     display: flex;
@@ -199,7 +198,8 @@ header::after {
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
     text-align: justify;
-    padding: 10px;
+    padding: 30px;
+    margin-top: 20px;
 }
 
 #location .office:hover::before,
@@ -209,9 +209,10 @@ header::after {
 
 #info {
     text-align: left;
-    background: #ffffff;
+    background: #000;
+    color: #fff;
     width: 600px;
-    height: 620px;
+    height: 420px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -224,19 +225,16 @@ header::after {
     align-items: center;
     justify-content: space-evenly;
     width: 500px;
-    height: 520px;
-    color: #4f4f4f;
+    height: 420px;
 }
 
 #info div h2 {
     text-align: left;
-    margin-top: 30px;
 }
 
 #info div .subtitle {
     font-weight: 700;
     font-size: 18px;
-    padding-top: 20px;
 }
 
 #info div .subemail {
@@ -246,7 +244,7 @@ header::after {
 
 #info div .content {
     font-size: 16px;
-    color: #919396;
+    color: #cacaca;
 }
 
 footer {
@@ -314,6 +312,7 @@ footer {
         height: auto;
         max-width: 100%;
     }
+    
     #info {
         margin-top: 60px;
     }
