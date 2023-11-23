@@ -140,7 +140,7 @@ header::after {
 }
 
 #location div {
-    width: 350px;
+    width: 370px;
     height: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
@@ -179,10 +179,16 @@ header::after {
     text-align: center;
     text-indent: 10px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    /* Adjusted to center vertically */
+    left: 50%;
+    /* Adjusted to center horizontally */
+    transform: translate(-50%, -50%);
+    /* Centering trick */
     width: 100%;
+    /* Adjusted to have space between div border */
     height: 100%;
+    /* Adjusted to have space between div border */
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     display: flex;
@@ -193,6 +199,7 @@ header::after {
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
     text-align: justify;
+    padding: 10px;
 }
 
 #location .office:hover::before,
