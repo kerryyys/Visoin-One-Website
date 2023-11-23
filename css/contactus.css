@@ -175,7 +175,7 @@ header::after {
 
 #location .office::before,
 #location .branch::before {
-    max-width: 350px;
+    max-width: 380px;
     content: attr(data-content);
     text-align: center;
     text-indent: 10px;
