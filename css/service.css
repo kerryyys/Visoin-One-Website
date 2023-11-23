@@ -76,6 +76,7 @@ header::after {
     overflow: hidden;
     color: #3ABFBC;
     border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 #work h2 {
@@ -92,7 +93,7 @@ header::after {
     height: 140px;
     padding: 40px;
     box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.2);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #work .box2 {
@@ -103,7 +104,7 @@ header::after {
     height: 140px;
     padding: 40px;
     box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.2);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #work .box3 {
@@ -114,7 +115,7 @@ header::after {
     height: 140px;
     padding: 40px;
     box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.2);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #work .box4 {
@@ -125,5 +126,10 @@ header::after {
     width: 1000px;
     height: 140px;
     padding: 40px;
-    box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.3);
+    box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.2);
+}
+
+#work div:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.5);
 }

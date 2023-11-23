@@ -4,8 +4,9 @@ nav li:nth-child(6) {
 
 header {
     background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2016/02/ANAMO-.4.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
+    height: 70vh;
 }
 
 body {
@@ -13,14 +14,33 @@ body {
     color: #ffffff;
 }
 
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0) 40%);
+}
+
 #intro {
     position: relative;
     padding: 40px 120px;
-    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+#intro h2 {
+    max-width: 500px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: normal;
+    color: #fff;
 }
 
 #intro p {
     color: #919396;
+    padding-bottom: 35px;
 }
 
 #inquiries p {
@@ -32,14 +52,14 @@ body {
     width: 90%;
     padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     margin-left: 35px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 #inquiries form textarea {
-    height: 300px;
+    height: 150px;
 }
 
 #inquiries .submit {
@@ -54,16 +74,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     text-align: center;
+    cursor: pointer;;
 }
 
 #inquiries .mainbox {
-    width: 700px;
+    width: 500px;
     height: 680px;
-    color: #ffffff;
-    background: rgba(58, 191, 188, 0.7);
-    box-shadow: 0 4px 8px rgba(131, 211, 228, 0.5);
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0;
+}
+
+#inquiries .mainbox h2 {
+    margin-top: 80px;
+    text-align: center;
 }
 
 .overlay {
@@ -109,19 +132,19 @@ body {
 
 #location {
     display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
+    justify-content: left;
     margin: 0 auto;
     text-align: center;
+    height: 80vh;
+    margin-left: 120px;
 }
 
 #location div {
-    width: 450px;
-    height: 400px;
-    margin-bottom: 20px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     background: url("https://visionone.com.my/wp-content/uploads/2016/02/v1off.jpg") no-repeat;
 }
@@ -134,6 +157,7 @@ body {
 #location .branch {
     background: url("https://visionone.com.my/wp-content/uploads/2016/02/kuantan_branch.jpg") no-repeat;
     background-size: cover;
+    margin-left: 30px;
 }
 
 #location .office h2 {
@@ -150,10 +174,10 @@ body {
 
 #location .office::before,
 #location .branch::before {
-    max-width: 420px;
+    max-width: 350px;
     content: attr(data-content);
     text-align: center;
-    padding: 20px;
+    text-indent: 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -168,6 +192,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
+    text-align: justify;
 }
 
 #location .office:hover::before,
@@ -176,25 +201,25 @@ body {
 }
 
 #info {
-    padding-bottom: 200px;
+    text-align: left;
 }
 
 #info div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: #ffffff;
-    width: 1000px;
-    height: 420px;
-    color: #000000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+    width: 600px;
+    height: 620px;
+    color: #4f4f4f;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     margin: 0 auto;
 }
 
 #info div h2 {
-    text-align: center;
+    text-align: left;
 }
 
 #info div .subtitle {
@@ -210,9 +235,16 @@ body {
 
 #info div .content {
     font-size: 16px;
+    color: #919396;
 }
 
 footer {
     background-color: #000000;
     color: #919396;
+}
+
+#contactBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
