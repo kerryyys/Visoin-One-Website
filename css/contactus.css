@@ -55,6 +55,7 @@ header::after {
     margin-bottom: 40px;
     margin-left: 35px;
     border-radius: 5px;
+    color: rgb(92, 92, 92);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
@@ -70,7 +71,7 @@ header::after {
     width: 120px;
     height: 50px;
     color: #000000;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     text-align: center;
@@ -108,7 +109,7 @@ header::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.678);
     color: #000000;
     padding: 30px;
     border-radius: 10px;
@@ -181,9 +182,7 @@ header::after {
     text-indent: 10px;
     position: absolute;
     top: 50%;
-    /* Adjusted to center vertically */
     left: 50%;
-    /* Adjusted to center horizontally */
     transform: translate(-50%, -50%);
     /* Centering trick */
     width: 100%;
@@ -210,30 +209,34 @@ header::after {
 
 #info {
     text-align: left;
+    background: #ffffff;
+    width: 600px;
+    height: 620px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #info div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    width: 600px;
-    height: 620px;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 520px;
     color: #4f4f4f;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    margin: 0 auto;
 }
 
 #info div h2 {
     text-align: left;
+    margin-top: 30px;
 }
 
 #info div .subtitle {
     font-weight: 700;
     font-size: 18px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #info div .subemail {
@@ -255,4 +258,63 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    #intro {
+        padding: 40px 20px;
+    }
+
+    #inquiries {
+        margin-bottom: 20px;
+    }
+
+    #inquiries form input,
+    #inquiries form textarea {
+        width: 100%;
+        margin: 0;
+    }
+
+    #location {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #location div {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    #location .branch {
+        margin-left: 0;
+    }
+
+    #location .office::before,
+    #location .branch::before {
+        max-width: 100%;
+    }
+
+    #info,
+    #inquiries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #inquiries .mainbox,
+    #info div {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    #info {
+        margin-top: 60px;
+    }
 }

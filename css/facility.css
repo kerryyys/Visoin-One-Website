@@ -2,10 +2,6 @@ nav li:nth-child(4) {
     border-bottom: 2px solid white;
 }
 
-nav {
-    background-color: #298482;
-}
-
 header {
     background-size: initial;
     height: initial;
@@ -15,7 +11,7 @@ header {
 
 #bg {
     position: relative;
-    padding: 40px 120px;
+    padding: 120px 120px 40px;
     background-color: #3ABFBC;
     color: #efefef;
 }
@@ -144,4 +140,79 @@ header {
 #faci h2 {
     margin-top: auto;
     font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    nav li:nth-child(4) {
+        border-bottom: 2px solid white;
+    }
+
+    nav {
+        background-color: #298482;
+    }
+
+    header {
+        background-size: initial;
+        height: initial;
+        background-position: initial;
+        position: initial;
+    }
+
+    #bg {
+        padding: 50px 20px 20px 20px;
+    }
+
+    #bg h2 {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    #bg .highlight {
+        color: #FFD966;
+    }
+
+    #title {
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    #title h2 {
+        text-decoration: underline;
+    }
+
+    #intro {
+        padding: 30px 20px 15px 15px;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    #intro p {
+        padding: 5px;
+    }
+
+    #faci {
+        padding-bottom: 100px;
+    }
+
+    #faci div {
+        height: 200px;
+        margin: 0 5px 20px;
+        font-weight: 500;
+    }
+
+    #faci .pigging1,
+    #faci .pigging2,
+    #faci .pipe26,
+    #faci .pipe4,
+    #faci .work,
+    #faci .radiation,
+    #faci .subsea {
+        width: 100%;
+        max-width: 100%;
+        background-size: cover;
+    }
+
+    #faci h2 {
+        font-size: 16px;
+    }
 }

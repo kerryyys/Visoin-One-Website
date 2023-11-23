@@ -3,8 +3,8 @@ nav li:nth-child(5) {
 }
 
 header {
-    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 70%), url('https://renown-electric.com/wp-content/uploads/AdobeStock_139899101.jpeg') center/cover no-repeat;
-    background-attachment: scroll;
+    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 30%), url('https://renown-electric.com/wp-content/uploads/AdobeStock_139899101.jpeg') center/cover no-repeat;
+    background-position: 20% 50%;
     position: relative;
     height: 490px;
 }
@@ -34,13 +34,14 @@ header::after {
     color: #fff;
 }
 
-#intro span{
+#intro span {
     display: block;
 }
 
 #content {
     color: #3ABFBC;
     padding-bottom: 200px;
+    padding-left: 100px;
 }
 
 #content a {
@@ -80,4 +81,38 @@ header::after {
 #content div h3 {
     padding: 0 0 20px 40px;
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 767px) {
+    header {
+        height: 300px;
+    }
+
+    header::after {
+        height: 50px;
+    }
+
+    #intro {
+        padding: 20px 30px;
+    }
+
+    #intro h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    #content {
+        padding-left: 10px;
+    }
+
+    #content h2 {
+        padding: 20px 30px 10px;
+    }
+
+    #content div {
+        margin-left: 30px;
+        max-width: 100%;
+        height: auto;
+    }
 }

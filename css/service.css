@@ -3,8 +3,8 @@ nav li:nth-child(4) {
 }
 
 header {
-    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2015/07/img3.jpg') center/cover no-repeat;
-    background-attachment: scroll;
+    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 40%), url('https://visionone.com.my/wp-content/uploads/2015/07/img3.jpg') center/cover no-repeat;
+    background-position: 40% 70%;
     position: relative;
     height: 430px;
 }
@@ -132,4 +132,66 @@ header::after {
 #work div:hover {
     transform: scale(1.05);
     box-shadow: 6px 6px 20px rgba(144, 144, 144, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+    nav li:nth-child(4) {
+        border-bottom: 2px solid white;
+    }
+
+    header {
+        background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2015/07/img3.jpg') center/cover no-repeat;
+        background-attachment: scroll;
+        position: relative;
+        height: 300px;
+    }
+
+    header::after {
+        height: 50px;
+    }
+
+    #intro {
+        padding: 20px;
+        background-color: #3ABFBC;
+        color: #efefef;
+    }
+
+    #intro h2 {
+        max-width: 100%;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    #title {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    #title h2 {
+        font-size: 20px;
+    }
+
+    #title p {
+        font-size: 14px;
+    }
+
+    #work .box1,
+    #work .box2,
+    #work .box3,
+    #work .box4 {
+        width: 500px;
+        background-size: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        color: #fff;
+    }
+
+    #work div:hover {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    #work .box4{
+        margin-bottom: 100px;
+    }
 }

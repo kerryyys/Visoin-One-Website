@@ -11,7 +11,7 @@ header {
 
 #intro {
     position: relative;
-    padding: 40px 120px;
+    padding: 120px 120px 40px;
     background-color: #3ABFBC;
     color: #ffffff;
 }
@@ -46,7 +46,13 @@ header {
 #content div {
     display: flex;
     align-items: baseline;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 45px;
+    border-bottom: 2px solid #d2d2d246;
+}
+
+#content div:last-child {
+    border-bottom: 0px;
 }
 
 #content .year {
@@ -74,4 +80,13 @@ header {
     font-size: 18px;
     display: block;
     margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 767px) {
+    #intro,
+    #title,
+    #content {
+        padding: 30px 30px;
+    }
 }

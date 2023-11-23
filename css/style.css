@@ -1,16 +1,38 @@
 @import url('normalize.css');
 
-.menu-container {
-    
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    color: #919396;
+}
+
+header {
+    font-family: Helvetica, sans-serif;
+    background-size: cover;
+    height: 600px;
+    background-position: bottom;
+    position: relative;
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
     list-style-type: none;
     margin: 0;
     padding: 2px;
     text-align: center;
     font-size: 13px;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -37,35 +59,8 @@ nav a {
     transition: color 0.1s;
 }
 
-ul li{
+ul li {
     list-style-type: none;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-y: auto;
-    height: 100%;
-    font-size: 20px;
-    font-weight: 100;
-    color: #919396;
-
-}
-
-header {
-    background-size: cover;
-    height: 600px;
-    background-position: bottom;
-    position: relative;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Styles for smaller screens */
 }
 
 h1,
@@ -83,7 +78,7 @@ footer {
     background-color: #ffffff;
     color: #919396;
     text-align: center;
-    padding: 30px 40px 20px;
+    padding: 20px 40px 15px;
     border-top: 0.2px solid #919396;
     display: flex;
     flex-direction: column;
@@ -92,6 +87,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    font-size: 13px;
 }
 
 footer .footer-top p,
@@ -125,5 +121,29 @@ footer .footer-bottom {
 
 footer .copyright{
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        font-size: 14px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    nav a:hover {
+        color: #3ABFBC;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }

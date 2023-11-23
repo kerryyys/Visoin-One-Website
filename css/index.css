@@ -3,27 +3,17 @@ nav li:nth-child(2) {
 }
 
 header {
-    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2016/02/Oil-and-Gas.jpg') center/cover no-repeat;
-    background-attachment: scroll;
+    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 30%), url('https://visionone.com.my/wp-content/uploads/2016/02/Oil-and-Gas.jpg') center/cover no-repeat;
+    background-position: 10% 75%;
     position: relative;
     height: 450px;
-}
-
-header::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 40%);
 }
 
 #intro {
     position: relative;
     padding: 40px 120px;
     background-color: #3ABFBC;
-    color: #efefef;
+    color: #efefefd8;
 }
 
 #intro h2 {
@@ -62,7 +52,7 @@ header::after {
 #our-mission {
     padding: 40px 200px 200px 120px;
     background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0) 50%), url('https://visionone.com.my/wp-content/uploads/2015/07/serv7.jpg') left no-repeat;
-    background-size: 51% auto;
+    background-size: 50% auto;
     height: 300px;
 }
 
@@ -74,4 +64,85 @@ header::after {
 #our-mission .text {
     padding-left: 800px;
     text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    nav li:nth-child(2) {
+        border-bottom: 2px solid white;
+    }
+
+    header {
+        background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 70%), url('https://visionone.com.my/wp-content/uploads/2016/02/Oil-and-Gas.jpg') center/cover no-repeat;
+        background-attachment: scroll;
+        position: relative;
+        height: 200px;
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(to top, #3ABFBC, rgba(58, 191, 188, 0) 40%);
+    }
+
+    #intro {
+        position: relative;
+        padding: 20px;
+        background-color: #3ABFBC;
+        color: #efefef;
+    }
+
+    #intro h2 {
+        max-width: 600px;
+        font-size: 30px;
+        line-height: normal;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    #solution-enabler,
+    #our-mission {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #solution-enabler h2,
+    #our-mission h2,
+    #solution-enabler .text-top,
+    #our-mission .text-top {
+        color: #3ABFBC;
+        text-align: center;
+    }
+
+    #solution-enabler {
+        background: url('https://visionone.com.my/wp-content/uploads/2015/07/serv6.jpg') center/cover no-repeat;
+        height: auto;
+    }
+
+    #solution-enabler .details {
+        margin-top: 10px;
+    }
+
+    #our-mission {
+        background: url('https://visionone.com.my/wp-content/uploads/2015/07/serv7.jpg') center/cover no-repeat;
+        height: auto;
+    }
+
+    #solution-enabler .text,
+    #our-mission .text {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    #our-mission{
+        padding-bottom: 150px;
+    }
 }

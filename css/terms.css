@@ -18,3 +18,25 @@ header {
 #content p{
     padding: 5px;
 }
+
+@media screen and (max-width: 767px) {
+    header {
+        background: linear-gradient(to top, #000000, rgba(58, 191, 188, 0) 70%), url('https://marketing.create-cdn.net/assets/terms.jpg') center/cover no-repeat;
+        background-attachment: scroll;
+        height: 300px;
+    }
+
+    #intro {
+        padding: 20px 20px 20px 40px;
+    }
+
+    #content {
+        margin: 10px 20px;
+        padding-bottom: 120px;
+        font-size: 15px;
+    }
+
+    #content p {
+        padding: 5px;
+    }
+}

@@ -2,10 +2,6 @@ nav li:nth-child(4) {
     border-bottom: 2px solid white;
 }
 
-nav {
-    background-color: #298482;
-}
-
 header {
     background-size: initial;
     height: initial;
@@ -15,7 +11,7 @@ header {
 
 #bg {
     position: relative;
-    padding: 40px 120px;
+    padding: 120px 120px 40px;
     background-color: #3ABFBC;
     color: #efefef;
 }
@@ -45,37 +41,113 @@ header {
 
 #intro {
     color: #919396;
-    padding: 20px 40px 30px 0px;
     text-align: left;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-#intro p {
-    padding: 10px;
+    max-width: 90%;
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 #content{
     color: #3ABFBC;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 2%;
+    padding-bottom: 50px;
+    height: 80vh;
 }
 
 #content div{
-    padding-left: 100px;
     padding-bottom: 20px;
 }
+
 #content div p{
     font-size: 16px;
     font-weight: 100;
-   
 }
-#content div .sub{
-    padding-left: 150px;
-}
+
 #content div div p{
     font-size: 25px;
     font-weight: 700;
-    padding-left: 50px;
 }
-#content div .div2{
-    padding-bottom: 200px;
+
+@media screen and (max-width: 767px) {
+    nav li:nth-child(4) {
+        border-bottom: 2px solid white;
+    }
+
+    nav {
+        background-color: #298482;
+    }
+
+    header {
+        background-size: initial;
+        height: initial;
+        background-position: initial;
+        position: initial;
+    }
+
+    #bg {
+        position: relative;
+        padding: 20px;
+        background-color: #3ABFBC;
+        color: #efefef;
+    }
+
+    #bg h2 {
+        max-width: none;
+        font-size: 30px;
+        padding-bottom: 10px;
+        line-height: normal;
+        color: #fff;
+    }
+
+    #bg .highlight {
+        color: #FFD966;
+    }
+
+    #title {
+        color: #3ABFBC;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    #title h2 {
+        text-decoration: underline;
+        max-width: none;
+    }
+
+    #intro {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #content {
+        color: #3ABFBC;
+    }
+
+    #content div {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    #content div p {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    #content div .sub {
+        padding-left: 20px;
+    }
+
+    #content div div p {
+        font-size: 25px;
+        font-weight: 700;
+        padding-left: 20px;
+    }
+
+    #content div .div2 {
+        padding-bottom: 100px;
+    }
 }

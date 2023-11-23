@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 nav li:nth-child(5) {
     border-bottom: 2px solid white;
 }
@@ -11,7 +12,7 @@ header {
 
 #intro {
     position: relative;
-    padding: 40px 120px;
+    padding: 120px 120px 40px;
     background-color: #3ABFBC;
     color: #ffffff;
 }
@@ -46,7 +47,13 @@ header {
 #content div {
     display: flex;
     align-items: baseline;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 45px;
+    border-bottom: 2px solid #d2d2d246;
+}
+
+#content div:last-child {
+    border-bottom: 0px;
 }
 
 #content .year {
@@ -59,17 +66,71 @@ header {
 #content h2 {
     color: #3ABFBC;
     width: 450px;
-    max-width: 450px;
+    max-width: 100%;
     margin-bottom: 10px;
 }
 
 #content p {
     color: #919396;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 #content p span {
     font-size: 18px;
     display: block;
-    padding-left: 100px;
+    padding-left: 0;
+    /* Updated to remove padding */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 20px;
+    }
+
+    #intro {
+        padding: 80px 20px 20px;
+    }
+
+    #intro h2 {
+        font-size: 30px;
+    }
+
+    #title {
+        padding: 20px;
+    }
+
+    #title h2 {
+        font-size: 30px;
+    }
+
+    #content {
+        padding: 20px;
+    }
+
+    #content div {
+        flex-direction: column;
+        align-items: initial;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    #content .year {
+        margin-bottom: 5px;
+    }
+
+    #content h2 {
+        width: auto;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    #content p {
+        max-width: none;
+    }
+
+    #content p span {
+        padding-left: 0;
+        /* Updated to remove padding */
+    }
 }
